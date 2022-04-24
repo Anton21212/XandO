@@ -10,7 +10,7 @@ def player(who):
     Q = 0
     while Q != 1:
         X = int(input("Введите поле в диапазоне от 1 до 9 включительно "))
-        if str(board[X - 1]) not in "XO":
+        if str(board[X - 1]) not in "XY":
             board[X - 1] = who
             my_board(board)
             Q = 1
